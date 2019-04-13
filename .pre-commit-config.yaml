@@ -10,3 +10,7 @@ repos:
         language: system
         entry: black
         types: [python]
+  - repo: https://gitlab.com/pycqa/flake8
+    rev: '3.7.7'
+    hooks:
+      - id: flake8
