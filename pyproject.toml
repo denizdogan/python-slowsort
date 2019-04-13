@@ -30,13 +30,16 @@ include = [
 python = "^2.7 || ^3.5"
 
 [tool.poetry.dev-dependencies]
+black = { version = "^18.3-alpha.0", allows-prereleases = true, python = "^3.6" }
 coverage = "^4.5"
 flake8 = "^3.7"
-flake8-bugbear = {version = "^19.3",python = "^3.5"}"
+flake8-bugbear = { version = "^19.3", python = "^3.5" }
 hypothesis = "^4.16"
+isort = "^4.3"
 pytest = "^4.4"
 pytest-runner = "^4.4"
-tox = "^3.8
+tox = "^3.8"
+pre-commit = "^1.15"
 
 [build-system]
 requires = ["poetry>=0.12"]
