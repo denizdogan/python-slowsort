@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "slowsort"
+version = "0.1.0"
+description = "Slowsort implemented in pure Python"
+authors = ["Deniz Dogan <denizdogan@users.noreply.github.com>"]
+readme = "README.md"
+homepage = "https://github.com/denizdogan/slowsort"
+repository = "https://github.com/denizdogan/slowsort.git"
+documentation = "https://github.com/denizdogan/slowsort"
+keywords = [
+    "slowsort",
+    "sorting",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+]
+packages = [
+    { include = "slowsort" },
+]
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^2.7 || ^3.5"
+
+[tool.poetry.dev-dependencies]
+coverage = "^4.5"
+flake8 = "^3.7"
+flake8-bugbear = {version = "^19.3",python = "^3.5"}"
+hypothesis = "^4.16"
+pytest = "^4.4"
+pytest-runner = "^4.4"
+tox = "^3.8
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
